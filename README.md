@@ -11,8 +11,11 @@ Role Variables
 --------------
 
 No variables in vars/main.yml file. Everything is in default.yml file.
+
 Most of the parameters are from "native" Ansible user module.
 
+
+```yaml
 #---
 ## defaults file for users
 ## Create a group for each user and make that their primary group
@@ -39,6 +42,7 @@ Most of the parameters are from "native" Ansible user module.
 #groups_to_create:
 #  - name: teamrocket
 #    gid: 255
+```
 
 Dependencies
 ------------
@@ -46,6 +50,7 @@ Dependencies
 Example Playbook
 ----------------
 
+```yaml
 - hosts: all
   become: yes
   roles:
@@ -95,6 +100,7 @@ Example Playbook
     users_to_remove:
       - username: dtrump
       - username: nsa-master
+```
 
 License
 -------
