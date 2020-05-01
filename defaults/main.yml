@@ -1,0 +1,27 @@
+---
+# defaults file for users
+# Create a group for each user and make that their primary group
+users_create_per_user_group: true
+# Default shell 
+users_default_shell: /bin/bash
+# Default home dir creation (false in acse of mounted FS like Solaris)
+users_create_homedirs: true
+# Users homedir
+users_homedir: /home
+users_ssh_key_type: rsa
+users_ssh_key_bits: 4096
+users_authorized_key_exclusive: no
+
+# Lists of users to create and delete
+users: []
+users_group: []
+users_groups: []
+users_to_remove: []
+groups_to_remove: []
+
+# List of groups to create
+# Example:
+#   groups_to_create:
+#     - name: teamrocket
+#       gid: 255
+groups_to_create: []
